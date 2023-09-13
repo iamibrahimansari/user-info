@@ -24,6 +24,7 @@ const Home = ({setCurrId}) =>{
     } 
 
     const handleOnClickDelete = async id =>{
+        setUsers(users.filter(user => user._id !== id));
         setCurrId(id);
     }
     return <div className="home">
